@@ -551,10 +551,53 @@ input {
 @media (max-width: 980px) {
     .pasek-glowny-wnetrze {
         flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .glowna-nawigacja {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .formularz-szukaj {
+        width: 100%;
+        max-width: none;
+    }
+
+    .akcje {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .akcje .przycisk {
+        flex: 1 1 140px;
     }
 
     .bohater {
         grid-template-columns: 1fr;
+    }
+
+    .strona-produktow {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-lewy {
+        order: 2;
+    }
+
+    .zawartosc-produktow {
+        order: 1;
+    }
+
+    .filtry-gorne {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filtry-gorne button {
+        flex: 1 1 140px;
     }
 
     .siatka-kart {
@@ -565,23 +608,55 @@ input {
 @media (max-width: 660px) {
     .pasek-glowny-wnetrze {
         flex-wrap: wrap;
+        gap: 12px;
     }
 
     .glowna-nawigacja {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 12px;
+    }
+
+    .glowna-nawigacja a {
+        padding: 10px 0;
     }
 
     .formularz-szukaj {
         max-width: 100%;
     }
 
+    .akcje {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .akcje .przycisk {
+        flex: 1 1 45%;
+        min-width: 140px;
+    }
+
     .bohater h1 {
         font-size: 2.4rem;
     }
 
+    .strona-produktow {
+        padding-bottom: 24px;
+    }
+
     .siatka-kart {
         grid-template-columns: 1fr;
+    }
+
+    .karta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .karta img {
+        height: 220px;
+        object-fit: cover;
     }
 }
 
