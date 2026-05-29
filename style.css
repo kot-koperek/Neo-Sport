@@ -26,6 +26,7 @@ body {
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    /* odstep pomiedzy liniami tekstu */
 }
 
 img {
@@ -46,6 +47,7 @@ input {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /* całe tło z proporcjami, centruje, nie rusza gdy scroll */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +83,7 @@ input {
     padding: 0 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* siatka z 3 kolumnami */
     gap: 20px;
 }
 
@@ -111,7 +114,9 @@ input {
     border-bottom: 1px solid rgba(15, 23, 42, 0.08);
     position: sticky;
     top: 0;
+    /* po osiagnieciu top 0 zostaje na gorze */
     z-index: 10;
+    /* warstwa na górze */
 }
 
 .pasek-glowny-wnetrze {
@@ -407,6 +412,7 @@ input {
 .bohater h1 {
     margin: 0 0 18px;
     font-size: clamp(2.5rem, 4vw, 4.5rem);
+    /* ogl 4vw ale nie mniej niż 2.5rem i nie więcej niż 4.5rem */
     line-height: 1.02;
     letter-spacing: -0.04em;
 }
@@ -427,6 +433,7 @@ input {
 .media-bohatera {
     border-radius: 28px;
     overflow: hidden;
+    /* wystaje poza element=nie ma */
     box-shadow: var(--shadow);
     background: linear-gradient(180deg, #dce9ff 0%, #f6f9ff 100%);
 }
@@ -499,6 +506,7 @@ input {
     height: auto;
     max-height: 280px;
     object-fit: contain;
+    /* skaluje obrazek ale moze zostawic boki biale */
     background: #f8fbff;
 }
 
@@ -657,6 +665,7 @@ input {
     .karta img {
         height: 220px;
         object-fit: cover;
+        /* caly wypelnia ale moze obciac boki */
     }
 }
 
